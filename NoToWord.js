@@ -54,57 +54,26 @@ function ntw(n)              //this function takes int no.(1 to 99 only) as para
     {
       return "";
     }
-    else if(n<=19 && n>=10)              // this condition for 10 to 19
-    {
-        switch(n)
-      {
-          case 10 :
-          case 11 :
-          case 12 :
-          case 13 :
-          case 14 :
-          case 15 :
-          case 16 :
-          case 17 :
-          case 18 :
-          case 19 :d1 = pre[n];       // words are stored in sequencial order corresponding to the value of n in array named pre.
-                   break;             //here we are using array values directly by case value or n.
-          default : break;
-      }
-        return d1;
+    else if(n<=19 && n>=10)
+    {      // words are stored in sequencial order corresponding to the value of n in array named pre.
+           //here we are using array values directly by case value or n.
+      d1 = pre[n];      
+      return d1;
     }
     else if((n>0 && n<10)||(n>19 && n<100))   //this condition includes the no. other than (10 to 19) from (1 to 99).
     {
-      switch(Math.floor(n/10))      // this includes 20,30,40,50,60,70,80,90 (here we are using Math.floor function to take greatest integer value).
+      if(n>19 && n<100)     // this includes 20,30,40,50,60,70,80,90 (here we are using Math.floor function to take greatest integer value).
       {
-          case 2 :
-          case 3 :
-          case 4 :
-          case 5 :
-          case 6 :
-          case 7 :
-          case 8 :
-          case 9 :d1=pre[Math.floor(n/10)+18];    //here we are using array values by adding 18 to the case value.
-                n-= Math.floor(n/10)*10;        // taking the unit's place of n.
-                  break;
-          default: break;
+        d1=pre[Math.floor(n/10)+18];    //here we are using array values by adding 18 to the case value.
+        n-= Math.floor(n/10)*10;        // taking the unit's place of n.
       }
-      switch(n)                 //this includes 1,2,3,4,5,6,7,8,9 
+
+      if (n>0 && n<10)         //this includes 1,2,3,4,5,6,7,8,9 
       {
-          case 0 :break;        // excluding the case of 0. 
-          case 1 :
-          case 2 :
-          case 3 :
-          case 4 :
-          case 5 :
-          case 6 :
-          case 7 :
-          case 8 :
-          case 9 : d2=pre[n];  //here we are using array values directly by case value or n.
-                 break;
-          default: break;
+        d2=pre[n];             //here we are using array values directly by case value or n.
       }
-        d1 = d1 + d2;           // here we are joining unit's & ten's place to make a 2 digit word string.
+
+      d1 = d1 + d2;           // here we are joining unit's & ten's place to make a 2 digit word string.
       return d1;
     }
     else                       // error message will be returned if value of n is not between 1 to 99.
