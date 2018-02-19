@@ -2,4 +2,8 @@
     <string name="app_name">Curron</string>
     <string name="string1">Convert number to word.</string>
     <string name="string2">Enter the amount.</string>
+    <string name="string3">RUPEES</string>
+    <string name="string4">(upto 9 digits)</string>
+    <string name="string5">PAISE</string>
+    <string name="string6">(upto 2 digits)</string>
 </resources>
