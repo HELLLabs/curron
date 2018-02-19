@@ -21,7 +21,7 @@ package com.example.sahil.curron
         var b = (Math.abs(B))
         var c : Int
         if(a == 0){
-            amt = "zero "
+            amt = pre[0]
         }
         for ((index,value) in fig.withIndex()){/*
             c = Math.floorDiv(a.toLong(),value).toInt()*/
