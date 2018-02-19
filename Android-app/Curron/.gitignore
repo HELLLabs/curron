@@ -7,3 +7,5 @@
 /build
 /captures
 .externalNativeBuild
+libs/
+/app/src/main/java/com/example/sahil/curron/Algo.kt
