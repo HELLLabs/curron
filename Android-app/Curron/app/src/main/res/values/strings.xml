@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Curron</string>
+    <string name="string1">Convert number to word.</string>
+    <string name="string2">Enter the amount.</string>
+</resources>

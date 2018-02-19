@@ -47,8 +47,8 @@ function ntw(n)              //this function takes int no.(1 to 99 only) as para
 {
   var pre =["Zero ","One ","Two ","Three ","Four ","Five ","Six ",
   "Seven ","Eight ","Nine ","Ten ","Eleven ","Twelve ","Thirteen ",
-  "Fourteen ","Fifteen ","Sixteen ","Seventeen ","Eighteen ","Ninteen ",
-  "Twenty ","Thirty ","Forty ","Fifty ","Sixty ","Seventy ","Eighty ","Ninty "];  // here these words are placed in sequence.
+  "Fourteen ","Fifteen ","Sixteen ","Seventeen ","Eighteen ","Nineteen ",
+  "Twenty ","Thirty ","Forty ","Fifty ","Sixty ","Seventy ","Eighty ","Ninety "];  // here these words are placed in sequence.
   var d1 = "", d2 = "";
   if(n==0)                  // if n is 0 then return empty string. 
     {
@@ -73,8 +73,8 @@ function ntw(n)              //this function takes int no.(1 to 99 only) as para
         d2=pre[n];             //here we are using array values directly by case value or n.
       }
 
-      d1 = d1 + d2;           // here we are joining unit's & ten's place to make a 2 digit word string.
-      return d1;
+      //d1 = d1 + d2;           // here we are joining unit's & ten's place to make a 2 digit word string.
+      return d1 + d2;
     }
     else                       // error message will be returned if value of n is not between 1 to 99.
     {
